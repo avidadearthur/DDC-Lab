@@ -171,7 +171,7 @@ Internally, the VGA Controller will consist of two modules:
     	assign oBlue  = (LIM && iColor) ? 15 * (iDataA2[ 15 - (iCountH % 16) ]) : 0;
 ```
 ### 4. FSM code
-
+See [here](https://github.com/avidadearthur/DDC-Lab/blob/main/FSM.pdf) for the FSM diagram.
 ```
     //This is the FSM module. it connects to Port B of the 
     // ScreenBufferMem, in order to update which characters
