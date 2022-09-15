@@ -1,0 +1,15 @@
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/Xilinx/Vivado/2020.1/bin/unwrapped/lnx64.o/xelab -wto a0ca08d2184f477381895fde34d0093c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot num_capture_4bit_TB_behav xil_defaultlib.num_capture_4bit_TB xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 12 for port 'oData' [/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/DDC-Lab-Final/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sim_1/new/num_capture_4bit_TB.v:31]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.num_capture_4bit
+Compiling module xil_defaultlib.num_capture_4bit_TB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot num_capture_4bit_TB_behav

@@ -1,0 +1,111 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Thu Dec 16 18:17:04 2021
+# Process ID: 693975
+# Current directory: /home/kamranpoladov
+# Command line: vivado
+# Log file: /home/kamranpoladov/vivado.log
+# Journal file: /home/kamranpoladov/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config /media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sim_1/imports/Hexadecimal_Editor/num_capture_4bit_TB_behav.wcfg
+source num_capture_4bit_TB.tcl
+run 10 s
+close_sim
+launch_simulation
+open_wave_config /media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sim_1/imports/Hexadecimal_Editor/num_capture_4bit_TB_behav.wcfg
+source num_capture_4bit_TB.tcl
+run 10 s
+close_sim
+launch_simulation
+open_wave_config /media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sim_1/imports/Hexadecimal_Editor/num_capture_4bit_TB_behav.wcfg
+source num_capture_4bit_TB.tcl
+run 10 s
+close_sim
+launch_simulation
+open_wave_config /media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sim_1/imports/Hexadecimal_Editor/num_capture_4bit_TB_behav.wcfg
+source num_capture_4bit_TB.tcl
+run 10 s
+relaunch_sim
+run 10 s
+relaunch_sim
+run 10 s
+relaunch_sim
+run 10 s
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+close_sim
+reset_run synth_1
+reset_run design_1_num_capture_4bit_0_0_synth_1
+update_module_reference design_1_num_capture_4bit_0_0
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z020_0]
+current_hw_device [get_hw_devices xc7z020_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_0]
+set_property PROGRAM.FILE {/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z020_0]
+program_hw_devices [get_hw_devices xc7z020_0]
+refresh_hw_device [lindex [get_hw_devices xc7z020_0] 0]
+close_hw_manager
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open /media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sim_1/new/VGA_pattern_TB.v w ]
+add_files -fileset sim_1 /media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sim_1/new/VGA_pattern_TB.v
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top VGA_pattern_TB [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+open_wave_config /media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sim_1/imports/Hexadecimal_Editor/num_capture_4bit_TB_behav.wcfg
+source VGA_pattern_TB.tcl
+run 10 s
+relaunch_sim
+relaunch_sim
+relaunch_sim
+run 10 s
+close_sim
+update_module_reference design_1_VGA_pattern_0_0
+launch_simulation
+open_wave_config /media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sim_1/imports/Hexadecimal_Editor/num_capture_4bit_TB_behav.wcfg
+source VGA_pattern_TB.tcl
+relaunch_sim
+run 10 s
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top num_capture_4bit_TB [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+update_module_reference design_1_VGA_pattern_0_0
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z020_0]
+current_hw_device [get_hw_devices xc7z020_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_0]
+set_property PROGRAM.FILE {/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z020_0]
+program_hw_devices [get_hw_devices xc7z020_0]
+refresh_hw_device [lindex [get_hw_devices xc7z020_0] 0]
+close_hw_manager
+archive_project /media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_Final.xpr.zip -force -include_local_ip_cache

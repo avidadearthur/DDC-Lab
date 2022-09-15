@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="num_capture_4bit_TB_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="num_capture_4bit_TB" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="2470416fs"></ZoomStartTime>
+      <ZoomEndTime time="2997917fs"></ZoomEndTime>
+      <Cursor1Time time="2910000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="146"></NameColumnWidth>
+      <ValueColumnWidth column_width="73"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="20" />
+   <wvobject fp_name="/num_capture_4bit_TB/rClk" type="logic">
+      <obj_property name="ElementShortName">rClk</obj_property>
+      <obj_property name="ObjectShortName">rClk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/num_capture_4bit_TB/rRst" type="logic">
+      <obj_property name="ElementShortName">rRst</obj_property>
+      <obj_property name="ObjectShortName">rRst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/num_capture_4bit_TB/rPush" type="logic">
+      <obj_property name="ElementShortName">rPush</obj_property>
+      <obj_property name="ObjectShortName">rPush</obj_property>
+   </wvobject>
+   <wvobject fp_name="/num_capture_4bit_TB/rPull" type="logic">
+      <obj_property name="ElementShortName">rPull</obj_property>
+      <obj_property name="ObjectShortName">rPull</obj_property>
+   </wvobject>
+   <wvobject fp_name="/num_capture_4bit_TB/rStop" type="logic">
+      <obj_property name="ElementShortName">rStop</obj_property>
+      <obj_property name="ObjectShortName">rStop</obj_property>
+   </wvobject>
+   <wvobject fp_name="/num_capture_4bit_TB/wWe" type="logic">
+      <obj_property name="ElementShortName">wWe</obj_property>
+      <obj_property name="ObjectShortName">wWe</obj_property>
+   </wvobject>
+   <wvobject fp_name="/num_capture_4bit_TB/num_capture_4bit_INST/rNumberNext" type="array">
+      <obj_property name="ElementShortName">rNumberNext[6:0]</obj_property>
+      <obj_property name="ObjectShortName">rNumberNext[6:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/num_capture_4bit_TB/num_capture_4bit_INST/rFSM_current" type="array">
+      <obj_property name="ElementShortName">rFSM_current[3:0]</obj_property>
+      <obj_property name="ObjectShortName">rFSM_current[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/num_capture_4bit_TB/num_capture_4bit_INST/oData" type="array">
+      <obj_property name="ElementShortName">oData[11:0]</obj_property>
+      <obj_property name="ObjectShortName">oData[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/num_capture_4bit_TB/num_capture_4bit_INST/rAddr" type="array">
+      <obj_property name="ElementShortName">rAddr[9:0]</obj_property>
+      <obj_property name="ObjectShortName">rAddr[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/num_capture_4bit_TB/num_capture_4bit_INST/sInit" type="array">
+      <obj_property name="ElementShortName">sInit[3:0]</obj_property>
+      <obj_property name="ObjectShortName">sInit[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/num_capture_4bit_TB/num_capture_4bit_INST/sIdle" type="array">
+      <obj_property name="ElementShortName">sIdle[3:0]</obj_property>
+      <obj_property name="ObjectShortName">sIdle[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/num_capture_4bit_TB/num_capture_4bit_INST/sPush" type="array">
+      <obj_property name="ElementShortName">sPush[3:0]</obj_property>
+      <obj_property name="ObjectShortName">sPush[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/num_capture_4bit_TB/num_capture_4bit_INST/sChange" type="array">
+      <obj_property name="ElementShortName">sChange[3:0]</obj_property>
+      <obj_property name="ObjectShortName">sChange[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/num_capture_4bit_TB/num_capture_4bit_INST/sUnChange" type="array">
+      <obj_property name="ElementShortName">sUnChange[3:0]</obj_property>
+      <obj_property name="ObjectShortName">sUnChange[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/num_capture_4bit_TB/num_capture_4bit_INST/sAddr" type="array">
+      <obj_property name="ElementShortName">sAddr[3:0]</obj_property>
+      <obj_property name="ObjectShortName">sAddr[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/num_capture_4bit_TB/num_capture_4bit_INST/sRstNum" type="array">
+      <obj_property name="ElementShortName">sRstNum[3:0]</obj_property>
+      <obj_property name="ObjectShortName">sRstNum[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/num_capture_4bit_TB/num_capture_4bit_INST/sSet" type="array">
+      <obj_property name="ElementShortName">sSet[3:0]</obj_property>
+      <obj_property name="ObjectShortName">sSet[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/num_capture_4bit_TB/num_capture_4bit_INST/sPull" type="array">
+      <obj_property name="ElementShortName">sPull[3:0]</obj_property>
+      <obj_property name="ObjectShortName">sPull[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/num_capture_4bit_TB/num_capture_4bit_INST/sData" type="array">
+      <obj_property name="ElementShortName">sData[3:0]</obj_property>
+      <obj_property name="ObjectShortName">sData[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

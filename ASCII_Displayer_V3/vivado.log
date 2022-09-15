@@ -1,0 +1,1213 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Thu Dec 16 18:17:04 2021
+# Process ID: 693975
+# Current directory: /home/kamranpoladov
+# Command line: vivado
+# Log file: /home/kamranpoladov/vivado.log
+# Journal file: /home/kamranpoladov/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/Xilinx/Vivado/2020.1/data/ip'.
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:05 . Memory (MB): peak = 7096.289 ; gain = 32.254 ; free physical = 6645 ; free virtual = 13729
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+WARNING: [BD 41-1731] Type mismatch between connected pins: /iRst(rst) and /ScreenBufferMem_0/iRst(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /iRst(rst) and /VGA_pattern_0/iRst(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /iRst(rst) and /VGA_timings_0/iRst(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /iRst(rst) and /num_capture_4bit_0/iRst(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /AsciiCharsMem_0/iClk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /ScreenBufferMem_0/iClk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /VGA_pattern_0/iClk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /VGA_timings_0/iClk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /num_capture_4bit_0/iClk(undef)
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/Xilinx/Vivado/2020.1/data/xsim/xsim.ini' copied to run dir:'/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'num_capture_4bit_TB' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim/chars.mem'
+INFO: [SIM-utils-43] Exported '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim/hello_world.mem'
+INFO: [SIM-utils-43] Exported '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim/instructions.mem'
+INFO: [SIM-utils-43] Exported '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim/welcome_screen.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj num_capture_4bit_TB_vlog.prj
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim'
+xelab -wto faaa8fcdcde14403a924b7db268122fd --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot num_capture_4bit_TB_behav xil_defaultlib.num_capture_4bit_TB xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/Xilinx/Vivado/2020.1/bin/unwrapped/lnx64.o/xelab -wto faaa8fcdcde14403a924b7db268122fd --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot num_capture_4bit_TB_behav xil_defaultlib.num_capture_4bit_TB xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 12 for port 'oData' [/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sim_1/new/num_capture_4bit_TB.v:31]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "num_capture_4bit_TB_behav -key {Behavioral:sim_1:Functional:num_capture_4bit_TB} -tclbatch {num_capture_4bit_TB.tcl} -view {/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sim_1/imports/Hexadecimal_Editor/num_capture_4bit_TB_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+open_wave_config /media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sim_1/imports/Hexadecimal_Editor/num_capture_4bit_TB_behav.wcfg
+source num_capture_4bit_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'num_capture_4bit_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 7279.188 ; gain = 17.820 ; free physical = 6507 ; free virtual = 13578
+run 10 s
+$stop called at time : 7140 ns : File "/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sim_1/new/num_capture_4bit_TB.v" Line 144
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+WARNING: [BD 41-1731] Type mismatch between connected pins: /iRst(rst) and /ScreenBufferMem_0/iRst(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /iRst(rst) and /VGA_pattern_0/iRst(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /iRst(rst) and /VGA_timings_0/iRst(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /iRst(rst) and /num_capture_4bit_0/iRst(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /AsciiCharsMem_0/iClk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /ScreenBufferMem_0/iClk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /VGA_pattern_0/iClk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /VGA_timings_0/iClk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /num_capture_4bit_0/iClk(undef)
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/Xilinx/Vivado/2020.1/data/xsim/xsim.ini' copied to run dir:'/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'num_capture_4bit_TB' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim/chars.mem'
+INFO: [SIM-utils-43] Exported '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim/hello_world.mem'
+INFO: [SIM-utils-43] Exported '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim/instructions.mem'
+INFO: [SIM-utils-43] Exported '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim/welcome_screen.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj num_capture_4bit_TB_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sources_1/new/num_capture_4bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module num_capture_4bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sim_1/new/num_capture_4bit_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module num_capture_4bit_TB
+INFO: [VRFC 10-2458] undeclared symbol wWe, assumed default net type wire [/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sim_1/new/num_capture_4bit_TB.v:31]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim'
+xelab -wto faaa8fcdcde14403a924b7db268122fd --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot num_capture_4bit_TB_behav xil_defaultlib.num_capture_4bit_TB xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/Xilinx/Vivado/2020.1/bin/unwrapped/lnx64.o/xelab -wto faaa8fcdcde14403a924b7db268122fd --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot num_capture_4bit_TB_behav xil_defaultlib.num_capture_4bit_TB xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 12 for port 'oData' [/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sim_1/new/num_capture_4bit_TB.v:31]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.num_capture_4bit
+Compiling module xil_defaultlib.num_capture_4bit_TB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot num_capture_4bit_TB_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "num_capture_4bit_TB_behav -key {Behavioral:sim_1:Functional:num_capture_4bit_TB} -tclbatch {num_capture_4bit_TB.tcl} -view {/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sim_1/imports/Hexadecimal_Editor/num_capture_4bit_TB_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+open_wave_config /media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sim_1/imports/Hexadecimal_Editor/num_capture_4bit_TB_behav.wcfg
+source num_capture_4bit_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'num_capture_4bit_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 7327.352 ; gain = 0.000 ; free physical = 6508 ; free virtual = 13579
+run 10 s
+$stop called at time : 12140 ns : File "/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sim_1/new/num_capture_4bit_TB.v" Line 145
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+WARNING: [BD 41-1731] Type mismatch between connected pins: /iRst(rst) and /ScreenBufferMem_0/iRst(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /iRst(rst) and /VGA_pattern_0/iRst(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /iRst(rst) and /VGA_timings_0/iRst(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /iRst(rst) and /num_capture_4bit_0/iRst(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /AsciiCharsMem_0/iClk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /ScreenBufferMem_0/iClk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /VGA_pattern_0/iClk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /VGA_timings_0/iClk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /num_capture_4bit_0/iClk(undef)
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/Xilinx/Vivado/2020.1/data/xsim/xsim.ini' copied to run dir:'/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'num_capture_4bit_TB' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim/chars.mem'
+INFO: [SIM-utils-43] Exported '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim/hello_world.mem'
+INFO: [SIM-utils-43] Exported '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim/instructions.mem'
+INFO: [SIM-utils-43] Exported '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim/welcome_screen.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj num_capture_4bit_TB_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sources_1/new/num_capture_4bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module num_capture_4bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sim_1/new/num_capture_4bit_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module num_capture_4bit_TB
+INFO: [VRFC 10-2458] undeclared symbol wWe, assumed default net type wire [/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sim_1/new/num_capture_4bit_TB.v:31]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim'
+xelab -wto faaa8fcdcde14403a924b7db268122fd --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot num_capture_4bit_TB_behav xil_defaultlib.num_capture_4bit_TB xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/Xilinx/Vivado/2020.1/bin/unwrapped/lnx64.o/xelab -wto faaa8fcdcde14403a924b7db268122fd --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot num_capture_4bit_TB_behav xil_defaultlib.num_capture_4bit_TB xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 12 for port 'oData' [/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sim_1/new/num_capture_4bit_TB.v:31]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.num_capture_4bit
+Compiling module xil_defaultlib.num_capture_4bit_TB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot num_capture_4bit_TB_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "num_capture_4bit_TB_behav -key {Behavioral:sim_1:Functional:num_capture_4bit_TB} -tclbatch {num_capture_4bit_TB.tcl} -view {/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sim_1/imports/Hexadecimal_Editor/num_capture_4bit_TB_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+open_wave_config /media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sim_1/imports/Hexadecimal_Editor/num_capture_4bit_TB_behav.wcfg
+source num_capture_4bit_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'num_capture_4bit_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 7338.223 ; gain = 0.000 ; free physical = 6501 ; free virtual = 13575
+run 10 s
+$stop called at time : 42140 ns : File "/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sim_1/new/num_capture_4bit_TB.v" Line 145
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+WARNING: [BD 41-1731] Type mismatch between connected pins: /iRst(rst) and /ScreenBufferMem_0/iRst(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /iRst(rst) and /VGA_pattern_0/iRst(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /iRst(rst) and /VGA_timings_0/iRst(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /iRst(rst) and /num_capture_4bit_0/iRst(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /AsciiCharsMem_0/iClk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /ScreenBufferMem_0/iClk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /VGA_pattern_0/iClk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /VGA_timings_0/iClk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /num_capture_4bit_0/iClk(undef)
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/Xilinx/Vivado/2020.1/data/xsim/xsim.ini' copied to run dir:'/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'num_capture_4bit_TB' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim/chars.mem'
+INFO: [SIM-utils-43] Exported '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim/hello_world.mem'
+INFO: [SIM-utils-43] Exported '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim/instructions.mem'
+INFO: [SIM-utils-43] Exported '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim/welcome_screen.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj num_capture_4bit_TB_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sources_1/new/num_capture_4bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module num_capture_4bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sim_1/new/num_capture_4bit_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module num_capture_4bit_TB
+INFO: [VRFC 10-2458] undeclared symbol wWe, assumed default net type wire [/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sim_1/new/num_capture_4bit_TB.v:31]
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim'
+xelab -wto faaa8fcdcde14403a924b7db268122fd --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot num_capture_4bit_TB_behav xil_defaultlib.num_capture_4bit_TB xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/Xilinx/Vivado/2020.1/bin/unwrapped/lnx64.o/xelab -wto faaa8fcdcde14403a924b7db268122fd --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot num_capture_4bit_TB_behav xil_defaultlib.num_capture_4bit_TB xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 12 for port 'oData' [/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sim_1/new/num_capture_4bit_TB.v:31]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.num_capture_4bit
+Compiling module xil_defaultlib.num_capture_4bit_TB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot num_capture_4bit_TB_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "num_capture_4bit_TB_behav -key {Behavioral:sim_1:Functional:num_capture_4bit_TB} -tclbatch {num_capture_4bit_TB.tcl} -view {/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sim_1/imports/Hexadecimal_Editor/num_capture_4bit_TB_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+open_wave_config /media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sim_1/imports/Hexadecimal_Editor/num_capture_4bit_TB_behav.wcfg
+source num_capture_4bit_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'num_capture_4bit_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 7364.223 ; gain = 0.000 ; free physical = 6495 ; free virtual = 13556
+run 10 s
+$stop called at time : 82380 ns : File "/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sim_1/new/num_capture_4bit_TB.v" Line 159
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+WARNING: [BD 41-1731] Type mismatch between connected pins: /iRst(rst) and /ScreenBufferMem_0/iRst(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /iRst(rst) and /VGA_pattern_0/iRst(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /iRst(rst) and /VGA_timings_0/iRst(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /iRst(rst) and /num_capture_4bit_0/iRst(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /AsciiCharsMem_0/iClk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /ScreenBufferMem_0/iClk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /VGA_pattern_0/iClk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /VGA_timings_0/iClk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /num_capture_4bit_0/iClk(undef)
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/Xilinx/Vivado/2020.1/data/xsim/xsim.ini' copied to run dir:'/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'num_capture_4bit_TB' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim/chars.mem'
+INFO: [SIM-utils-43] Exported '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim/hello_world.mem'
+INFO: [SIM-utils-43] Exported '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim/instructions.mem'
+INFO: [SIM-utils-43] Exported '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim/welcome_screen.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj num_capture_4bit_TB_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sources_1/new/num_capture_4bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module num_capture_4bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sim_1/new/num_capture_4bit_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module num_capture_4bit_TB
+INFO: [VRFC 10-2458] undeclared symbol wWe, assumed default net type wire [/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sim_1/new/num_capture_4bit_TB.v:31]
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+launch_simulation: Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 7364.223 ; gain = 0.000 ; free physical = 6582 ; free virtual = 13599
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+WARNING: [BD 41-1731] Type mismatch between connected pins: /iRst(rst) and /ScreenBufferMem_0/iRst(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /iRst(rst) and /VGA_pattern_0/iRst(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /iRst(rst) and /VGA_timings_0/iRst(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /iRst(rst) and /num_capture_4bit_0/iRst(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /AsciiCharsMem_0/iClk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /ScreenBufferMem_0/iClk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /VGA_pattern_0/iClk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /VGA_timings_0/iClk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /num_capture_4bit_0/iClk(undef)
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim'
+xelab -wto faaa8fcdcde14403a924b7db268122fd --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot num_capture_4bit_TB_behav xil_defaultlib.num_capture_4bit_TB xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/Xilinx/Vivado/2020.1/bin/unwrapped/lnx64.o/xelab -wto faaa8fcdcde14403a924b7db268122fd --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot num_capture_4bit_TB_behav xil_defaultlib.num_capture_4bit_TB xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 12 for port 'oData' [/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sim_1/new/num_capture_4bit_TB.v:31]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.num_capture_4bit
+Compiling module xil_defaultlib.num_capture_4bit_TB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot num_capture_4bit_TB_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:22 ; elapsed = 00:00:10 . Memory (MB): peak = 7364.223 ; gain = 0.000 ; free physical = 6586 ; free virtual = 13593
+run 10 s
+$stop called at time : 42380 ns : File "/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sim_1/new/num_capture_4bit_TB.v" Line 159
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+WARNING: [BD 41-1731] Type mismatch between connected pins: /iRst(rst) and /ScreenBufferMem_0/iRst(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /iRst(rst) and /VGA_pattern_0/iRst(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /iRst(rst) and /VGA_timings_0/iRst(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /iRst(rst) and /num_capture_4bit_0/iRst(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /AsciiCharsMem_0/iClk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /ScreenBufferMem_0/iClk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /VGA_pattern_0/iClk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /VGA_timings_0/iClk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /num_capture_4bit_0/iClk(undef)
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/Xilinx/Vivado/2020.1/data/xsim/xsim.ini' copied to run dir:'/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'num_capture_4bit_TB' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim/chars.mem'
+INFO: [SIM-utils-43] Exported '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim/hello_world.mem'
+INFO: [SIM-utils-43] Exported '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim/instructions.mem'
+INFO: [SIM-utils-43] Exported '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim/welcome_screen.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj num_capture_4bit_TB_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sources_1/new/num_capture_4bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module num_capture_4bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sim_1/new/num_capture_4bit_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module num_capture_4bit_TB
+INFO: [VRFC 10-2458] undeclared symbol wWe, assumed default net type wire [/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sim_1/new/num_capture_4bit_TB.v:31]
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+launch_simulation: Time (s): cpu = 00:00:20 ; elapsed = 00:00:10 . Memory (MB): peak = 7439.258 ; gain = 0.000 ; free physical = 6591 ; free virtual = 13594
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+WARNING: [BD 41-1731] Type mismatch between connected pins: /iRst(rst) and /ScreenBufferMem_0/iRst(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /iRst(rst) and /VGA_pattern_0/iRst(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /iRst(rst) and /VGA_timings_0/iRst(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /iRst(rst) and /num_capture_4bit_0/iRst(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /AsciiCharsMem_0/iClk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /ScreenBufferMem_0/iClk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /VGA_pattern_0/iClk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /VGA_timings_0/iClk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /num_capture_4bit_0/iClk(undef)
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim'
+xelab -wto faaa8fcdcde14403a924b7db268122fd --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot num_capture_4bit_TB_behav xil_defaultlib.num_capture_4bit_TB xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/Xilinx/Vivado/2020.1/bin/unwrapped/lnx64.o/xelab -wto faaa8fcdcde14403a924b7db268122fd --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot num_capture_4bit_TB_behav xil_defaultlib.num_capture_4bit_TB xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 12 for port 'oData' [/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sim_1/new/num_capture_4bit_TB.v:31]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.num_capture_4bit
+Compiling module xil_defaultlib.num_capture_4bit_TB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot num_capture_4bit_TB_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:25 ; elapsed = 00:00:14 . Memory (MB): peak = 7439.258 ; gain = 0.000 ; free physical = 6588 ; free virtual = 13591
+run 10 s
+$stop called at time : 42140 ns : File "/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sim_1/new/num_capture_4bit_TB.v" Line 153
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+WARNING: [BD 41-1731] Type mismatch between connected pins: /iRst(rst) and /ScreenBufferMem_0/iRst(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /iRst(rst) and /VGA_pattern_0/iRst(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /iRst(rst) and /VGA_timings_0/iRst(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /iRst(rst) and /num_capture_4bit_0/iRst(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /AsciiCharsMem_0/iClk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /ScreenBufferMem_0/iClk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /VGA_pattern_0/iClk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /VGA_timings_0/iClk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /num_capture_4bit_0/iClk(undef)
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/Xilinx/Vivado/2020.1/data/xsim/xsim.ini' copied to run dir:'/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'num_capture_4bit_TB' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim/chars.mem'
+INFO: [SIM-utils-43] Exported '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim/hello_world.mem'
+INFO: [SIM-utils-43] Exported '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim/instructions.mem'
+INFO: [SIM-utils-43] Exported '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim/welcome_screen.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj num_capture_4bit_TB_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sources_1/new/num_capture_4bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module num_capture_4bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sim_1/new/num_capture_4bit_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module num_capture_4bit_TB
+INFO: [VRFC 10-2458] undeclared symbol wWe, assumed default net type wire [/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sim_1/new/num_capture_4bit_TB.v:31]
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+WARNING: [BD 41-1731] Type mismatch between connected pins: /iRst(rst) and /ScreenBufferMem_0/iRst(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /iRst(rst) and /VGA_pattern_0/iRst(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /iRst(rst) and /VGA_timings_0/iRst(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /iRst(rst) and /num_capture_4bit_0/iRst(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /AsciiCharsMem_0/iClk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /ScreenBufferMem_0/iClk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /VGA_pattern_0/iClk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /VGA_timings_0/iClk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /num_capture_4bit_0/iClk(undef)
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim'
+xelab -wto faaa8fcdcde14403a924b7db268122fd --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot num_capture_4bit_TB_behav xil_defaultlib.num_capture_4bit_TB xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/Xilinx/Vivado/2020.1/bin/unwrapped/lnx64.o/xelab -wto faaa8fcdcde14403a924b7db268122fd --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot num_capture_4bit_TB_behav xil_defaultlib.num_capture_4bit_TB xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 12 for port 'oData' [/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sim_1/new/num_capture_4bit_TB.v:31]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.num_capture_4bit
+Compiling module xil_defaultlib.num_capture_4bit_TB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot num_capture_4bit_TB_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:18 ; elapsed = 00:00:09 . Memory (MB): peak = 7439.258 ; gain = 0.000 ; free physical = 6544 ; free virtual = 13564
+run 10 s
+$stop called at time : 42140 ns : File "/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sim_1/new/num_capture_4bit_TB.v" Line 153
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+WARNING: [BD 41-1731] Type mismatch between connected pins: /iRst(rst) and /ScreenBufferMem_0/iRst(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /iRst(rst) and /VGA_pattern_0/iRst(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /iRst(rst) and /VGA_timings_0/iRst(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /iRst(rst) and /num_capture_4bit_0/iRst(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /AsciiCharsMem_0/iClk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /ScreenBufferMem_0/iClk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /VGA_pattern_0/iClk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /VGA_timings_0/iClk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /num_capture_4bit_0/iClk(undef)
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'PRIM_IN_FREQ' from '125.000' to '100.000' has been ignored for IP 'clk_wiz_0'
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+Wrote  : </media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sources_1/bd/design_1/design_1.bd> 
+VHDL Output written to : /media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : /media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : /media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block num_capture_4bit_0 .
+Exporting to file /media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file /media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File /media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+[Thu Dec 16 18:33:20 2021] Launched design_1_num_capture_4bit_0_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_num_capture_4bit_0_0_synth_1: /media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.runs/design_1_num_capture_4bit_0_0_synth_1/runme.log
+synth_1: /media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.runs/synth_1/runme.log
+[Thu Dec 16 18:33:20 2021] Launched impl_1...
+Run output will be captured here: /media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:24 ; elapsed = 00:00:16 . Memory (MB): peak = 7498.285 ; gain = 0.000 ; free physical = 6348 ; free virtual = 13363
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+reset_run synth_1
+reset_run design_1_num_capture_4bit_0_0_synth_1
+update_module_reference design_1_num_capture_4bit_0_0
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding component instance block -- xilinx.com:module_ref:Debounce_Switch:1.0 - Debounce_Switch_0
+Adding component instance block -- xilinx.com:module_ref:Debounce_Switch:1.0 - Debounce_Switch_1
+Adding component instance block -- xilinx.com:module_ref:AsciiCharsMem:1.0 - AsciiCharsMem_0
+Adding component instance block -- xilinx.com:module_ref:ScreenBufferMem:1.0 - ScreenBufferMem_0
+Adding component instance block -- xilinx.com:module_ref:VGA_pattern:1.0 - VGA_pattern_0
+Adding component instance block -- xilinx.com:module_ref:VGA_timings:1.0 - VGA_timings_0
+Adding component instance block -- xilinx.com:module_ref:num_capture_4bit:1.0 - num_capture_4bit_0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /iRst(rst) and /ScreenBufferMem_0/iRst(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /iRst(rst) and /VGA_pattern_0/iRst(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /iRst(rst) and /VGA_timings_0/iRst(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /iRst(rst) and /num_capture_4bit_0/iRst(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /AsciiCharsMem_0/iClk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /ScreenBufferMem_0/iClk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /VGA_pattern_0/iClk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /VGA_timings_0/iClk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /num_capture_4bit_0/iClk(undef)
+Successfully read diagram <design_1> from BD file </media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sources_1/bd/design_1/design_1.bd>
+Upgrading '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-1972] Upgraded design_1_num_capture_4bit_0_0 from num_capture_4bit_v1_0 1.0 to num_capture_4bit_v1_0 1.0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /num_capture_4bit_0_upgraded_ipi/iClk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /iRst(rst) and /num_capture_4bit_0_upgraded_ipi/iRst(undef)
+Wrote  : </media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sources_1/bd/design_1/design_1.bd> 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'PRIM_IN_FREQ' from '125.000' to '100.000' has been ignored for IP 'clk_wiz_0'
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+WARNING: [BD 41-927] Following properties on pin /AsciiCharsMem_0/iClk have been updated from connected ip, but BD cell '/AsciiCharsMem_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	PHASE = 0.0 
+Please resolve any mismatches by directly setting properties on BD cell </AsciiCharsMem_0> to completely resolve these warnings.
+WARNING: [BD 41-927] Following properties on pin /ScreenBufferMem_0/iRst have been updated from connected ip, but BD cell '/ScreenBufferMem_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	POLARITY = ACTIVE_HIGH 
+Please resolve any mismatches by directly setting properties on BD cell </ScreenBufferMem_0> to completely resolve these warnings.
+WARNING: [BD 41-927] Following properties on pin /ScreenBufferMem_0/iClk have been updated from connected ip, but BD cell '/ScreenBufferMem_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	PHASE = 0.0 
+Please resolve any mismatches by directly setting properties on BD cell </ScreenBufferMem_0> to completely resolve these warnings.
+WARNING: [BD 41-927] Following properties on pin /VGA_pattern_0/iClk have been updated from connected ip, but BD cell '/VGA_pattern_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	PHASE = 0.0 
+Please resolve any mismatches by directly setting properties on BD cell </VGA_pattern_0> to completely resolve these warnings.
+WARNING: [BD 41-927] Following properties on pin /VGA_pattern_0/iRst have been updated from connected ip, but BD cell '/VGA_pattern_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	POLARITY = ACTIVE_HIGH 
+Please resolve any mismatches by directly setting properties on BD cell </VGA_pattern_0> to completely resolve these warnings.
+WARNING: [BD 41-927] Following properties on pin /VGA_timings_0/iClk have been updated from connected ip, but BD cell '/VGA_timings_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	PHASE = 0.0 
+Please resolve any mismatches by directly setting properties on BD cell </VGA_timings_0> to completely resolve these warnings.
+WARNING: [BD 41-927] Following properties on pin /VGA_timings_0/iRst have been updated from connected ip, but BD cell '/VGA_timings_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	POLARITY = ACTIVE_HIGH 
+Please resolve any mismatches by directly setting properties on BD cell </VGA_timings_0> to completely resolve these warnings.
+Wrote  : </media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sources_1/bd/design_1/design_1.bd> 
+VHDL Output written to : /media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : /media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : /media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block num_capture_4bit_0 .
+Exporting to file /media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file /media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File /media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+[Thu Dec 16 18:34:43 2021] Launched design_1_num_capture_4bit_0_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_num_capture_4bit_0_0_synth_1: /media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.runs/design_1_num_capture_4bit_0_0_synth_1/runme.log
+synth_1: /media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.runs/synth_1/runme.log
+[Thu Dec 16 18:34:43 2021] Launched impl_1...
+Run output will be captured here: /media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:20 ; elapsed = 00:00:12 . Memory (MB): peak = 7500.297 ; gain = 0.000 ; free physical = 6292 ; free virtual = 13312
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.1
+  **** Build date : May 27 2020 at 20:33:44
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2020.1.0
+  **** Build date : May 14 2020-03:10:29
+    ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z020_0]
+current_hw_device [get_hw_devices xc7z020_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_0] 0]
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7z020_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_0]
+set_property PROGRAM.FILE {/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z020_0]
+program_hw_devices [get_hw_devices xc7z020_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_0] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open /media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sim_1/new/VGA_pattern_TB.v w ]
+add_files -fileset sim_1 /media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sim_1/new/VGA_pattern_TB.v
+update_compile_order -fileset sim_1
+set_property top VGA_pattern_TB [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/Xilinx/Vivado/2020.1/data/xsim/xsim.ini' copied to run dir:'/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'VGA_pattern_TB' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim/chars.mem'
+INFO: [SIM-utils-43] Exported '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim/hello_world.mem'
+INFO: [SIM-utils-43] Exported '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim/instructions.mem'
+INFO: [SIM-utils-43] Exported '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim/welcome_screen.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj VGA_pattern_TB_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sim_1/new/VGA_pattern_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module VGA_pattern_TB
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim'
+xelab -wto faaa8fcdcde14403a924b7db268122fd --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot VGA_pattern_TB_behav xil_defaultlib.VGA_pattern_TB xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/Xilinx/Vivado/2020.1/bin/unwrapped/lnx64.o/xelab -wto faaa8fcdcde14403a924b7db268122fd --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot VGA_pattern_TB_behav xil_defaultlib.VGA_pattern_TB xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'iDataA2' [/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sim_1/new/VGA_pattern_TB.v:29]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.VGA_pattern
+Compiling module xil_defaultlib.VGA_pattern_TB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot VGA_pattern_TB_behav
+
+****** Webtalk v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source /media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim/xsim.dir/VGA_pattern_TB_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu Dec 16 18:53:30 2021...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "VGA_pattern_TB_behav -key {Behavioral:sim_1:Functional:VGA_pattern_TB} -tclbatch {VGA_pattern_TB.tcl} -protoinst "protoinst_files/design_1.protoinst" -view {/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sim_1/imports/Hexadecimal_Editor/num_capture_4bit_TB_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/design_1.protoinst for the following reason(s):
+There are no instances of module "design_1" in the design.
+
+Time resolution is 1 ps
+open_wave_config /media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sim_1/imports/Hexadecimal_Editor/num_capture_4bit_TB_behav.wcfg
+WARNING: Simulation object /num_capture_4bit_TB/rClk was not found in the design.
+WARNING: Simulation object /num_capture_4bit_TB/rRst was not found in the design.
+WARNING: Simulation object /num_capture_4bit_TB/rPush was not found in the design.
+WARNING: Simulation object /num_capture_4bit_TB/rPull was not found in the design.
+WARNING: Simulation object /num_capture_4bit_TB/rStop was not found in the design.
+WARNING: Simulation object /num_capture_4bit_TB/wWe was not found in the design.
+WARNING: Simulation object /num_capture_4bit_TB/num_capture_4bit_INST/rNumberNext was not found in the design.
+WARNING: Simulation object /num_capture_4bit_TB/num_capture_4bit_INST/rFSM_current was not found in the design.
+WARNING: Simulation object /num_capture_4bit_TB/num_capture_4bit_INST/oData was not found in the design.
+WARNING: Simulation object /num_capture_4bit_TB/num_capture_4bit_INST/rAddr was not found in the design.
+WARNING: Simulation object /num_capture_4bit_TB/num_capture_4bit_INST/sInit was not found in the design.
+WARNING: Simulation object /num_capture_4bit_TB/num_capture_4bit_INST/sIdle was not found in the design.
+WARNING: Simulation object /num_capture_4bit_TB/num_capture_4bit_INST/sPush was not found in the design.
+WARNING: Simulation object /num_capture_4bit_TB/num_capture_4bit_INST/sChange was not found in the design.
+WARNING: Simulation object /num_capture_4bit_TB/num_capture_4bit_INST/sUnChange was not found in the design.
+WARNING: Simulation object /num_capture_4bit_TB/num_capture_4bit_INST/sAddr was not found in the design.
+WARNING: Simulation object /num_capture_4bit_TB/num_capture_4bit_INST/sRstNum was not found in the design.
+WARNING: Simulation object /num_capture_4bit_TB/num_capture_4bit_INST/sSet was not found in the design.
+WARNING: Simulation object /num_capture_4bit_TB/num_capture_4bit_INST/sPull was not found in the design.
+WARNING: Simulation object /num_capture_4bit_TB/num_capture_4bit_INST/sData was not found in the design.
+source VGA_pattern_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'VGA_pattern_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 8797.125 ; gain = 0.000 ; free physical = 4920 ; free virtual = 12004
+run 10 s
+$stop called at time : 2140 ns : File "/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sim_1/new/VGA_pattern_TB.v" Line 54
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/Xilinx/Vivado/2020.1/data/xsim/xsim.ini' copied to run dir:'/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'VGA_pattern_TB' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim/chars.mem'
+INFO: [SIM-utils-43] Exported '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim/hello_world.mem'
+INFO: [SIM-utils-43] Exported '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim/instructions.mem'
+INFO: [SIM-utils-43] Exported '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim/welcome_screen.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj VGA_pattern_TB_vlog.prj
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim'
+xelab -wto faaa8fcdcde14403a924b7db268122fd --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot VGA_pattern_TB_behav xil_defaultlib.VGA_pattern_TB xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/Xilinx/Vivado/2020.1/bin/unwrapped/lnx64.o/xelab -wto faaa8fcdcde14403a924b7db268122fd --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot VGA_pattern_TB_behav xil_defaultlib.VGA_pattern_TB xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'iDataA2' [/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sim_1/new/VGA_pattern_TB.v:29]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.1
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/design_1.protoinst for the following reason(s):
+There are no instances of module "design_1" in the design.
+
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 8797.125 ; gain = 0.000 ; free physical = 5042 ; free virtual = 12104
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/Xilinx/Vivado/2020.1/data/xsim/xsim.ini' copied to run dir:'/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'VGA_pattern_TB' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim/chars.mem'
+INFO: [SIM-utils-43] Exported '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim/hello_world.mem'
+INFO: [SIM-utils-43] Exported '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim/instructions.mem'
+INFO: [SIM-utils-43] Exported '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim/welcome_screen.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj VGA_pattern_TB_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sources_1/new/VGA_pattern.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module VGA_pattern
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sim_1/new/VGA_pattern_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module VGA_pattern_TB
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim'
+xelab -wto faaa8fcdcde14403a924b7db268122fd --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot VGA_pattern_TB_behav xil_defaultlib.VGA_pattern_TB xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/Xilinx/Vivado/2020.1/bin/unwrapped/lnx64.o/xelab -wto faaa8fcdcde14403a924b7db268122fd --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot VGA_pattern_TB_behav xil_defaultlib.VGA_pattern_TB xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'iDataA2' [/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sim_1/new/VGA_pattern_TB.v:29]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.VGA_pattern
+Compiling module xil_defaultlib.VGA_pattern_TB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot VGA_pattern_TB_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.1
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/design_1.protoinst for the following reason(s):
+There are no instances of module "design_1" in the design.
+
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:15 ; elapsed = 00:00:09 . Memory (MB): peak = 8838.047 ; gain = 19.191 ; free physical = 5031 ; free virtual = 12092
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/Xilinx/Vivado/2020.1/data/xsim/xsim.ini' copied to run dir:'/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'VGA_pattern_TB' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim/chars.mem'
+INFO: [SIM-utils-43] Exported '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim/hello_world.mem'
+INFO: [SIM-utils-43] Exported '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim/instructions.mem'
+INFO: [SIM-utils-43] Exported '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim/welcome_screen.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj VGA_pattern_TB_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sources_1/new/VGA_pattern.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module VGA_pattern
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sim_1/new/VGA_pattern_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module VGA_pattern_TB
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+launch_simulation: Time (s): cpu = 00:00:15 ; elapsed = 00:00:08 . Memory (MB): peak = 8882.883 ; gain = 0.000 ; free physical = 5132 ; free virtual = 12198
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim'
+xelab -wto faaa8fcdcde14403a924b7db268122fd --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot VGA_pattern_TB_behav xil_defaultlib.VGA_pattern_TB xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/Xilinx/Vivado/2020.1/bin/unwrapped/lnx64.o/xelab -wto faaa8fcdcde14403a924b7db268122fd --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot VGA_pattern_TB_behav xil_defaultlib.VGA_pattern_TB xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'iDataA2' [/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sim_1/new/VGA_pattern_TB.v:29]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.VGA_pattern
+Compiling module xil_defaultlib.VGA_pattern_TB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot VGA_pattern_TB_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.1
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/design_1.protoinst for the following reason(s):
+There are no instances of module "design_1" in the design.
+
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:23 ; elapsed = 00:00:13 . Memory (MB): peak = 8882.883 ; gain = 0.000 ; free physical = 5135 ; free virtual = 12202
+run 10 s
+$stop called at time : 2240 ns : File "/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sim_1/new/VGA_pattern_TB.v" Line 54
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+update_module_reference design_1_VGA_pattern_0_0
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Upgrading '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-1972] Upgraded design_1_VGA_pattern_0_0 from VGA_pattern_v1_0 1.0 to VGA_pattern_v1_0 1.0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /VGA_pattern_0_upgraded_ipi/iClk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /iRst(rst) and /VGA_pattern_0_upgraded_ipi/iRst(undef)
+Wrote  : </media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : </media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+update_module_reference: Time (s): cpu = 00:00:17 ; elapsed = 00:00:08 . Memory (MB): peak = 8882.883 ; gain = 0.000 ; free physical = 5114 ; free virtual = 12169
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/Xilinx/Vivado/2020.1/data/xsim/xsim.ini' copied to run dir:'/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'VGA_pattern_TB' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim/chars.mem'
+INFO: [SIM-utils-43] Exported '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim/hello_world.mem'
+INFO: [SIM-utils-43] Exported '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim/instructions.mem'
+INFO: [SIM-utils-43] Exported '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim/welcome_screen.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj VGA_pattern_TB_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sources_1/new/VGA_pattern.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module VGA_pattern
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sim_1/new/VGA_pattern_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module VGA_pattern_TB
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim'
+xelab -wto faaa8fcdcde14403a924b7db268122fd --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot VGA_pattern_TB_behav xil_defaultlib.VGA_pattern_TB xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/Xilinx/Vivado/2020.1/bin/unwrapped/lnx64.o/xelab -wto faaa8fcdcde14403a924b7db268122fd --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot VGA_pattern_TB_behav xil_defaultlib.VGA_pattern_TB xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'iDataA2' [/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sim_1/new/VGA_pattern_TB.v:29]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.VGA_pattern
+Compiling module xil_defaultlib.VGA_pattern_TB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot VGA_pattern_TB_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "VGA_pattern_TB_behav -key {Behavioral:sim_1:Functional:VGA_pattern_TB} -tclbatch {VGA_pattern_TB.tcl} -view {/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sim_1/imports/Hexadecimal_Editor/num_capture_4bit_TB_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+open_wave_config /media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sim_1/imports/Hexadecimal_Editor/num_capture_4bit_TB_behav.wcfg
+WARNING: Simulation object /num_capture_4bit_TB/rClk was not found in the design.
+WARNING: Simulation object /num_capture_4bit_TB/rRst was not found in the design.
+WARNING: Simulation object /num_capture_4bit_TB/rPush was not found in the design.
+WARNING: Simulation object /num_capture_4bit_TB/rPull was not found in the design.
+WARNING: Simulation object /num_capture_4bit_TB/rStop was not found in the design.
+WARNING: Simulation object /num_capture_4bit_TB/wWe was not found in the design.
+WARNING: Simulation object /num_capture_4bit_TB/num_capture_4bit_INST/rNumberNext was not found in the design.
+WARNING: Simulation object /num_capture_4bit_TB/num_capture_4bit_INST/rFSM_current was not found in the design.
+WARNING: Simulation object /num_capture_4bit_TB/num_capture_4bit_INST/oData was not found in the design.
+WARNING: Simulation object /num_capture_4bit_TB/num_capture_4bit_INST/rAddr was not found in the design.
+WARNING: Simulation object /num_capture_4bit_TB/num_capture_4bit_INST/sInit was not found in the design.
+WARNING: Simulation object /num_capture_4bit_TB/num_capture_4bit_INST/sIdle was not found in the design.
+WARNING: Simulation object /num_capture_4bit_TB/num_capture_4bit_INST/sPush was not found in the design.
+WARNING: Simulation object /num_capture_4bit_TB/num_capture_4bit_INST/sChange was not found in the design.
+WARNING: Simulation object /num_capture_4bit_TB/num_capture_4bit_INST/sUnChange was not found in the design.
+WARNING: Simulation object /num_capture_4bit_TB/num_capture_4bit_INST/sAddr was not found in the design.
+WARNING: Simulation object /num_capture_4bit_TB/num_capture_4bit_INST/sRstNum was not found in the design.
+WARNING: Simulation object /num_capture_4bit_TB/num_capture_4bit_INST/sSet was not found in the design.
+WARNING: Simulation object /num_capture_4bit_TB/num_capture_4bit_INST/sPull was not found in the design.
+WARNING: Simulation object /num_capture_4bit_TB/num_capture_4bit_INST/sData was not found in the design.
+source VGA_pattern_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'VGA_pattern_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 8882.883 ; gain = 0.000 ; free physical = 5071 ; free virtual = 12131
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/Xilinx/Vivado/2020.1/data/xsim/xsim.ini' copied to run dir:'/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'VGA_pattern_TB' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim/chars.mem'
+INFO: [SIM-utils-43] Exported '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim/hello_world.mem'
+INFO: [SIM-utils-43] Exported '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim/instructions.mem'
+INFO: [SIM-utils-43] Exported '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim/welcome_screen.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj VGA_pattern_TB_vlog.prj
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.sim/sim_1/behav/xsim'
+xelab -wto faaa8fcdcde14403a924b7db268122fd --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot VGA_pattern_TB_behav xil_defaultlib.VGA_pattern_TB xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/Xilinx/Vivado/2020.1/bin/unwrapped/lnx64.o/xelab -wto faaa8fcdcde14403a924b7db268122fd --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot VGA_pattern_TB_behav xil_defaultlib.VGA_pattern_TB xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'iDataA2' [/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sim_1/new/VGA_pattern_TB.v:29]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 8882.883 ; gain = 0.000 ; free physical = 5089 ; free virtual = 12139
+run 10 s
+$stop called at time : 2240 ns : File "/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sim_1/new/VGA_pattern_TB.v" Line 54
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property top num_capture_4bit_TB [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+update_module_reference design_1_VGA_pattern_0_0
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Upgrading '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-1972] Upgraded design_1_VGA_pattern_0_0 from VGA_pattern_v1_0 1.0 to VGA_pattern_v1_0 1.0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /VGA_pattern_0_upgraded_ipi/iClk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /iRst(rst) and /VGA_pattern_0_upgraded_ipi/iRst(undef)
+Wrote  : </media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sources_1/bd/design_1/design_1.bd> 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'PRIM_IN_FREQ' from '125.000' to '100.000' has been ignored for IP 'clk_wiz_0'
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+WARNING: [BD 41-927] Following properties on pin /AsciiCharsMem_0/iClk have been updated from connected ip, but BD cell '/AsciiCharsMem_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	PHASE = 0.0 
+Please resolve any mismatches by directly setting properties on BD cell </AsciiCharsMem_0> to completely resolve these warnings.
+WARNING: [BD 41-927] Following properties on pin /ScreenBufferMem_0/iRst have been updated from connected ip, but BD cell '/ScreenBufferMem_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	POLARITY = ACTIVE_HIGH 
+Please resolve any mismatches by directly setting properties on BD cell </ScreenBufferMem_0> to completely resolve these warnings.
+WARNING: [BD 41-927] Following properties on pin /ScreenBufferMem_0/iClk have been updated from connected ip, but BD cell '/ScreenBufferMem_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	PHASE = 0.0 
+Please resolve any mismatches by directly setting properties on BD cell </ScreenBufferMem_0> to completely resolve these warnings.
+WARNING: [BD 41-927] Following properties on pin /VGA_timings_0/iClk have been updated from connected ip, but BD cell '/VGA_timings_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	PHASE = 0.0 
+Please resolve any mismatches by directly setting properties on BD cell </VGA_timings_0> to completely resolve these warnings.
+WARNING: [BD 41-927] Following properties on pin /VGA_timings_0/iRst have been updated from connected ip, but BD cell '/VGA_timings_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	POLARITY = ACTIVE_HIGH 
+Please resolve any mismatches by directly setting properties on BD cell </VGA_timings_0> to completely resolve these warnings.
+Wrote  : </media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sources_1/bd/design_1/design_1.bd> 
+VHDL Output written to : /media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : /media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : /media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block VGA_pattern_0 .
+Exporting to file /media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file /media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File /media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+[Thu Dec 16 19:06:23 2021] Launched design_1_VGA_pattern_0_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_VGA_pattern_0_0_synth_1: /media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.runs/design_1_VGA_pattern_0_0_synth_1/runme.log
+synth_1: /media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.runs/synth_1/runme.log
+[Thu Dec 16 19:06:23 2021] Launched impl_1...
+Run output will be captured here: /media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:44 ; elapsed = 00:00:20 . Memory (MB): peak = 8883.066 ; gain = 0.184 ; free physical = 5082 ; free virtual = 12126
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.1
+  **** Build date : May 27 2020 at 20:33:44
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2020.1.0
+  **** Build date : May 14 2020-03:10:29
+    ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z020_0]
+current_hw_device [get_hw_devices xc7z020_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_0] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z020_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_0]
+set_property PROGRAM.FILE {/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_V3/ASCII_Displayer_V3.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z020_0]
+program_hw_devices [get_hw_devices xc7z020_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_0] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+archive_project /media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/KUL/ddc/ASCII_Displayer_Final.xpr.zip -force -include_local_ip_cache
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location './.Xil/Vivado-693975-XPS-13-9300' for archiving project
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/media/kamranpoladov/db5e1c1b-558e-4f71-be03-2e729f28bda5/Xilinx/Vivado/2020.1/data/ip'.
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+WARNING: [IP_Flow 19-3571] IP 'design_1_Debounce_Switch_1_0' is restricted:
+* Module reference is stale and needs refreshing.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-5107] Inferred bus interface 'i_Clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-5661] Bus Interface 'i_Clk' does not have any bus interfaces associated with it.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-5107] Inferred bus interface 'i_Clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-5661] Bus Interface 'i_Clk' does not have any bus interfaces associated with it.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'N' by 10 for port or parameter 'H_r_CntCurr'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'N' by 10 for port or parameter 'H_w_CntNext'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'N' by 10 for port or parameter 'V_r_CntCurr'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'N' by 10 for port or parameter 'V_w_CntNext'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [Coretcl 2-1213] Including run results for 'synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'design_1_clk_wiz_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'design_1_Debounce_Switch_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'design_1_Debounce_Switch_1_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'design_1_AsciiCharsMem_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'design_1_VGA_timings_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'design_1_ScreenBufferMem_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'design_1_num_capture_4bit_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'design_1_VGA_pattern_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'impl_1'
+INFO: [Coretcl 2-133] re-setting run 'design_1_clk_wiz_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_Debounce_Switch_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_Debounce_Switch_1_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_AsciiCharsMem_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_VGA_timings_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_ScreenBufferMem_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_num_capture_4bit_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_VGA_pattern_0_0_impl_1'...
+INFO: [Coretcl 2-1212] Importing remotely added design sources and verilog include files (if any)...
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_AsciiCharsMem_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_AsciiCharsMem_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_Debounce_Switch_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_Debounce_Switch_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_Debounce_Switch_1_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_Debounce_Switch_1_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_ScreenBufferMem_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_ScreenBufferMem_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_VGA_pattern_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_VGA_pattern_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_VGA_timings_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_VGA_timings_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_clk_wiz_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_clk_wiz_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_num_capture_4bit_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_num_capture_4bit_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'sim_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sim_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
